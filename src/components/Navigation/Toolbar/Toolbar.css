@@ -1,0 +1,28 @@
+
+.Toolbar {
+    top: 0;
+    width: 100%;
+    /* background-color: #4257ce;
+    box-shadow: inset -13px -27px 52px -18px rgba(27,27,122,1); */
+    /* background-color: #707179; */
+    background-color: #FF9800;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.DesktopOnly {
+    height: 100%;
+}
+
+@media (max-width: 499px) {
+    .DesktopOnly {
+        display: none;
+    }
+}
+@media (min-width: 500px) {
+    .MobileOnly {
+        display: none;
+    }
+}

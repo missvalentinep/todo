@@ -1,0 +1,19 @@
+.Sidedrawer {
+    position: fixed;
+    width: 80%;
+    background: white;
+    top: 0;
+    height: 100%;
+    z-index: 100;
+    padding-top: 30px;
+    transition: transform 0.4s ease-out;
+}
+
+.Open {
+    display: block;
+    transform:  translateX(0);
+}
+
+.Closed {
+    transform:  translateX(-100%);
+}

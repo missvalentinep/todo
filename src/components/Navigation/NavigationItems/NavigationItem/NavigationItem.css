@@ -1,0 +1,30 @@
+.NavigationItem {
+    
+    display: inline-block;
+    padding: 5px 10px;
+    width: auto;
+    box-sizing: border-box;
+    vertical-align: middle;
+    font-weight: bold;
+    
+}
+
+.NavigationItem a {
+    text-decoration: none;
+    color:  #FF9800;
+}
+
+.NavigationItem a:hover{
+    border-bottom: 0.5px solid white;
+}
+
+@media (min-width: 500px) {
+    .NavigationItem {
+       margin: auto 0;
+       height: auto;
+    }
+    .NavigationItem a {
+        text-decoration: none;
+        color:  #ffffff;
+    }
+}

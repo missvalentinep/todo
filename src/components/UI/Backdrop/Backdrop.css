@@ -1,0 +1,16 @@
+.Backdrop {
+    background: #0000006e;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 50;
+}
+
+.Open {
+    display: block;
+}
+
+.Closed {
+    display: none;
+}
