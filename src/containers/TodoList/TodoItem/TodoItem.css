@@ -1,0 +1,26 @@
+.TodoItem {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    margin: 15px 0 10px 0;
+}
+
+.TodoContainer {
+    border-bottom: 1px solid #caddf9;
+   
+    display: flex;
+}
+
+.TodoContainer img {
+    margin: auto 0 auto auto;
+}
+
+.Completed {
+    color: gray;
+    text-decoration: line-through;
+}
+
+/* .Completed::after {
+    height: 1px;
+    width: 100%;
+    color: black;
+} */
