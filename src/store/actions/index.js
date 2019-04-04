@@ -1,5 +1,7 @@
 export {
-    addTodoItem,
-    removeTodoItem,
-    toggleTodoItemCompletion,
+    sendTodoItem,
+    removeTodoItemInit,
+    toggleTodoItemCompletionInit,
+    fetchTodoItemsInit,
+
 } from './todoList';
