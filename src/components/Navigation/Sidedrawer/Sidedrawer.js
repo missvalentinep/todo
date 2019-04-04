@@ -9,7 +9,7 @@ const sidedrawer = props => {
     return (
         <React.Fragment>
             <Backdrop show={props.show} clicked={props.close} />
-            <div className={classList.join(" ")}>
+            <div className={classList.join(" ")} onClick={props.close}>
                 <NavigationItems />
             </div>
         </React.Fragment>
