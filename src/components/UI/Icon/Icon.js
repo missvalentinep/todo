@@ -1,6 +1,7 @@
 import React from 'react';
 
 import deleteIcon from '../../../assets/icons/delete.png';
+import enterIcon from '../../../assets/icons/enter.png';
 
 const icon = props => {
     let iconSrc = '';
@@ -10,6 +11,11 @@ const icon = props => {
     switch (props.type) {
         case "trash":
             iconSrc = deleteIcon;
+            alt = 'delete';
+            style = { width: "20px", height: "20px", cursor: "pointer" };
+            break;
+        case "enter":
+            iconSrc = enterIcon;
             alt = 'delete';
             style = { width: "20px", height: "20px", cursor: "pointer" };
             break;

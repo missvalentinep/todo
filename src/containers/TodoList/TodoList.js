@@ -5,6 +5,7 @@ import * as actions from '../../store/actions/index';
 import classes from './TodoList.css';
 import TodoItem from './TodoItem/TodoItem';
 import Input from '../../components/UI/Input/Input';
+import Icon from '../../components/UI/Icon/Icon';
 import Loading from '../../components/UI/Loading/Loading';
 
 const todoList = props => {
@@ -20,12 +21,17 @@ const todoList = props => {
         setUserInput(event.target.value);
     }
 
-    const addTodoItem = event => {
+    const keyPressedHandler = event => {
         if (event.key === "Enter") {
-            setUserInput('');
-            props.onAddTodo(userInput);
+            addTodoItem();
         }
     }
+    const addTodoItem = () => {
+        setUserInput('');
+        props.onAddTodo(userInput);
+    };
+
+
 
     console.log(props.loading);
     let todosElements = <Loading />;
@@ -39,17 +45,20 @@ const todoList = props => {
                 completed={item.completed}>
                 {item.text}
             </TodoItem>)
-        )
-    }
+        );
+    };
 
     return (
         <div className={classes.TodoList}>
-            <Input type={"text"}
-                changed={userInputHandler}
-                value={userInput}
-                submitted={addTodoItem}>
-                Add your todo item!
+            <div className={classes.InputContainer}>
+                <Input type={"text"}
+                    changed={userInputHandler}
+                    value={userInput}
+                    submitted={keyPressedHandler}>
+                    Add your todo item!
             </Input>
+                <Icon type={"enter"} clicked={addTodoItem} />
+            </div>
             {todosElements}
         </div>
     )

@@ -7,6 +7,13 @@
     box-sizing: border-box;
 }
 
+.InputContainer {
+    display: flex;
+}
+.InputContainer > img {
+    margin: auto 0 auto -23px;
+}
+
 @media (min-width: 1000px) {
     .TodoList {
         width: 800px;
