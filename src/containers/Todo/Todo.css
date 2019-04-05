@@ -1,0 +1,21 @@
+.Todo {
+    width: 80%;
+    margin: 20px auto;
+    /* border: 1px solid blue; */
+    box-shadow: 10px 10px 30px #dfe1e4;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.InputContainer {
+    display: flex;
+}
+.InputContainer > img {
+    margin: auto 0 auto -23px;
+}
+
+@media (min-width: 1000px) {
+    .TodoList {
+        width: 800px;
+    }
+}

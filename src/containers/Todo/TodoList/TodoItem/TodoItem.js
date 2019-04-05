@@ -1,7 +1,7 @@
 import React from 'react';
 
 import classes from './TodoItem.css';
-import Icon from '../../../components/UI/Icon/Icon';
+import Icon from '../../../../components/UI/Icon/Icon';
 const todoItem = props => {
     const classList = [classes.TodoItem, props.completed ? classes.Completed : null];
     return (
