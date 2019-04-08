@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { connect } from 'react-redux';
 
 import classes from './Toolbar.css';
 import SidedrawerToggle from '../Sidedrawer/SidedrawerToggle/SidedrawerToggle';
@@ -16,15 +17,21 @@ const toolbar = props => {
         <div className={classes.Toolbar}>
             <div className={classes.MobileOnly}>
                 <SidedrawerToggle clicked={toggleSidedrawer} />
-                <Sidedrawer show={sideDrawerVisible} close={toggleSidedrawer}/>
+                <Sidedrawer show={sideDrawerVisible} close={toggleSidedrawer} />
             </div>
 
             <div className={classes.DesktopOnly}>
-                <NavigationItems />
+                <NavigationItems authenticated={props.auth} />
             </div>
         </div>
 
     );
 };
 
-export default toolbar;
+const mapStateToProps = state => {
+    return {
+        auth: state.auth.token !== null
+    }
+}
+
+export default connect(mapStateToProps, null)(toolbar);

@@ -12,5 +12,6 @@
     .NavigationItems {
         flex-flow: row;
         float: right;
+        margin-right: 10%;
     }
 }

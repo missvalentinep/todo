@@ -5,6 +5,7 @@
     font-family: inherit;
     font-size: 1em;
     box-sizing: border-box;
+    margin: 0 0 10px 0;
 }
 
 .Input:focus {

@@ -1,7 +1,7 @@
 .TodoItem {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
-    margin: 15px 0 10px 0;
+    margin: 15px 0 10px 10px;
 }
 
 .TodoContainer {
@@ -11,7 +11,7 @@
 }
 
 .TodoContainer img {
-    margin: auto 0 auto auto;
+    margin: auto 10px auto auto;
 }
 
 .Completed {

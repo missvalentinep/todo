@@ -12,7 +12,9 @@ const app = props => {
     <Layout>
       <Switch>
         <Route path='/' exact component={Todo} />
-        <Route path='/auth' component={Auth} />
+        <Route path='/login' render={() => <Auth signup={false} />} />
+        <Route path='/signup' render={() => <Auth signup={true} />} />
+        <Route path='/logout' render={() => <Auth logout={true} />} />
       </Switch>
     </Layout>
   );

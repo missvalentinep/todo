@@ -10,7 +10,8 @@ const input = props => {
             placeholder={props.children}
             value={props.value}
             onChange={props.changed} 
-            onKeyPress={props.submitted} />
+            onKeyPress={props.submitted}
+             />
     );
 };
 

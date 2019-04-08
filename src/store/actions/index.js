@@ -5,3 +5,10 @@ export {
     fetchTodoItemsInit,
 
 } from './todoList';
+
+export {
+    signupInit,
+    loginInit,
+    logout,
+    checkAuthToken
+} from './auth';
